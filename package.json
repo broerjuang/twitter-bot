@@ -1,0 +1,36 @@
+{
+  "name": "ohSave",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ohSave",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "babel src --ignore \"_*\" --out-dir lib",
+    "lint": "eslint . --max-warnings 0",
+    "typecheck": "flow",
+    "test-src": "jest",
+    "test": "npm run lint && npm run typecheck && npm run test-src"
+  },
+  "dependencies": {
+    "monet": "^0.8.10",
+    "node-fetch": "^1.6.3",
+    "twit": "^2.2.5"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-syntax-flow": "^6.18.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-es2015-native-generators": "^6.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "eslint": "^3.19.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-flowtype": "^2.32.1",
+    "flow-bin": "^0.45.0",
+    "jest": "^20.0.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
