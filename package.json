@@ -12,6 +12,7 @@
     "test": "npm run lint && npm run typecheck && npm run test-src"
   },
   "dependencies": {
+    "dotenv": "^4.0.0",
     "monet": "^0.8.10",
     "node-fetch": "^1.6.3",
     "twit": "^2.2.5"
